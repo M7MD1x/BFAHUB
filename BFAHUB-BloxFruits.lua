@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 getgenv().SecureMode = true
 
-local Window = Rayfield:CreateWindow({
+local Window = Library:CreateWindow({
 	Name = "Blox Fruits - BFA",
 	LoadingTitle = "Blox Fruits - BFA",
 	LoadingSubtitle = "Welcome To My Soul Society",
