@@ -15,12 +15,6 @@ local Button = Tab:CreateButton({
 		Rayfield:Destroy()
 	end,
 })
-local Button = TabMobile:CreateButton({
-	Name = "Close",
-	Callback = function()
-		Rayfield:Destroy()
-	end,
-})
 local Button = Tab:CreateButton({
 	Name = "Hoho Hub V3 (NEW)",
 	Callback = function()
