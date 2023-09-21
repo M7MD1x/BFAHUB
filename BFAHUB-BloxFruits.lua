@@ -1,7 +1,6 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()getgenv().SecureMode = true
 
-local Window = Library:CreateWindow({
+local Window = Rayfield:CreateWindow({
 	Name = "Blox Fruits - BFA",
 	LoadingTitle = "Blox Fruits - BFA",
 	LoadingSubtitle = "Welcome To My Soul Society",
@@ -10,6 +9,18 @@ local Tab = Window:CreateTab("Main GUI's")
 local Section = Tab:CreateSection("Blox Fruits Main GUI's")
 local Label = Tab:CreateLabel("Thanks for using")
 
+local Button = Tab:CreateButton({
+	Name = "Close",
+	Callback = function()
+		Rayfield:Destroy()
+	end,
+})
+local Button = TabMobile:CreateButton({
+	Name = "Close",
+	Callback = function()
+		Rayfield:Destroy()
+	end,
+})
 local Button = Tab:CreateButton({
 	Name = "Hoho Hub V3 (NEW)",
 	Callback = function()
